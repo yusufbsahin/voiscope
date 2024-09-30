@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Voiscope</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='form.css'>
+
+    <script src='main.js' defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- EKSİKLER
+ 1. Bazı küçük buton veya form elementlerinin sayfadaki konumu
+ 2. Sayfanın ingilizce çevirisi (en son yapılacak html tamamen bitmiş olmalı)
+ 3. Mobil ekranlar ile uyumlu hale getirme -->
+
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" alt="Voiscope Logosu" class="logo">
+        <div class="menu">
+            <a href="#">ANA SAYFA</a>            
+            <a href="#urunler-demo">ÜRÜNLER-DEMO</a>
+            <a href="#demo-talebi">DEMO TALEBİ</a>
+            <a href="#ar-ge">AR-GE</a>
+            <a href="#kariyer">KARİYER</a>
+            <a href="#iletisim">İLETİŞİM</a>
+        </div>
+        <button onclick="window.location.href='index-en.html'" class="language" >ENG</button>
+      </div>
+
+    <div class="giris">
+       
+        <h2>VOISCOPE'A HOŞGELDİNİZ</h2>
+            <p style="font-size: larger;" class="hosgeldiniz">
+              Voiscope, 2016 yılında Yıldız Teknopark’ta başladığı yolculukta, ses teknolojileri ve çağrı merkezi çözümlerinde derin öğrenme tabanlı yenilikler geliştiren bir Ar-Ge firması olarak öne çıkıyor. Konuşma tanıma (ASR), konuşma sentezi (TTS), duygu analizi, konuşmacı tanıma ve ses kayıt çözümleri gibi gelişmiş teknolojilerde uzmanlaşan ekibimiz, aynı zamanda sektörde danışmanlık hizmetleri sunarak müşterilerimizin teknolojik dönüşümüne katkı sağlıyor. Sesin gücünü keşfetmeye hazır mısınız?
+            </p>
+    </div>
+
+<div id="urunler-demo" >
+<br>
+    <div class="pasta">
+        <ul class="up">
+          <li class="card1">
+            <a class="urunisim" href="#info1">IVR - DIALER</a>
+          </li>
+          <li class="card2">
+            <a class="urunisim" href="#info2">SES KAYIT - SPEECH ANALYTICS</a>
+          </li>
+        </ul>
+        <ul class="down">
+          <li class="card3">
+            <a class="urunisim" href="#info3">ASR - DEMO</a>
+          </li>
+          <li class="card4">
+            <a class="urunisim" href="#info4">TTS - DEMO</a>
+          </li>
+        </ul>
+      </div>
+</div>      
+      <div class="info-section">
+        <div id="info1" class="card-info">
+          <div class="head_title">
+            <h3>Voiscope IVR Sistemi</h3>
+            <div class="separator"></div>
+          </div>
+          <p>IVR (Interactive Voice Response), Türkçede <em>Etkileşimli Sesli Yanıt Sistemi</em> olarak bilinir. Bu sistem, telefon çağrılarında müşteri temsilcisine ihtiyaç duymadan, belirlenen senaryoya göre arayan kişiye anons, tuşlama veya sesli komutlarla hizmet sunar.</p>
+
+          <p>Gelişmiş bir IVR sisteminde beklenen başlıca özellikler şunlardır:</p>
+      
+          <p><strong>Kolay tasarım ve yönetim:</strong> Kullanıcı dostu arayüz ile basit kurulum ve yönetim.</p>
+          <p><strong>Dağıtık yapı:</strong> Farklı lokasyonlarda çalışma imkanı.</p>
+          <p><strong>Esnek ve detaylı raporlama:</strong> Performans ve kullanım analizleri için gelişmiş raporlama.</p>
+          <p><strong>Dış veri kaynaklarıyla entegrasyon:</strong> Script çalıştırma, veritabanı sorgulama, web servis ya da DLL çağırma desteği.</p>
+          <p><strong>CTI, ASR ve TTS entegrasyonu:</strong> Çağrı merkezi yazılımları ve sesli yanıt teknolojileriyle uyumlu çalışma.</p>
+      
+          <p>Geliştirdiğimiz IVR ürünü, tüm bu özellikleri ve daha fazlasını sunarak esnek yapısıyla her türlü entegrasyona uygun hale getirilmiştir.</p>
+      
+          <hr>
+          <div class="head_title">
+            <h3>Voiscope Dialer Sistemi</h3>
+            <div class="separator"></div>
+          </div>
+          <p>Dialer sistemleri, belirlenen numaraları otomatik olarak arayan sistemlerdir. Sistem, yüklenen telefon numaraları içeren veriyi belirlenen tarihlerde ve saatlerde arar. Ulaşılamayan numaralar, belirlenen kurallar çerçevesinde yeniden aranabilir ya da bir daha aranmamak üzere kaydedilir. Tüm arama işlemleri, sonuçlarıyla birlikte veritabanına loglanır.</p>
+
+          <p>Dialer sistemlerinin dört farklı çalışma modu bulunur:</p>
+      
+          <p><strong>Robot Modu:</strong> Bilgilendirme amaçlı yapılan ve müşteri temsilcisine bağlanmadan IVR senaryosuyla sonuçlanan aramalar.</p>
+          <p><strong>Preview Modu:</strong> Müşteri temsilcisi onayıyla yapılan ve müşteri temsilcisine aktarılan aramalar.</p>
+          <p><strong>Progressive Modu:</strong> Müsait temsilci sayısına göre otomatik arama yapılıp uygun temsilciye aktarılan aramalar.</p>
+          <p><strong>Predictive Modu:</strong> Çoklu temsilci durumunda, daha yüksek performans sağlamak amacıyla temsilci sayısından fazla çağrı çıkartılan aramalar.</p>
+      <br>
+          <p>Gelişmiş bir Dialer sisteminden beklenen özellikler arasında şunlar bulunur:</p>
+      
+          <p><strong>Kolay tasarım ve yönetim:</strong> Kullanıcı dostu arayüzle kolayca yönetilebilir.</p>
+          <p><strong>Dağıtık yapı:</strong> Farklı lokasyonlarda çalışabilme imkanı.</p>
+          <p><strong>Esnek raporlama:</strong> Ulaşılamayan aramaların nedenlerini detaylı şekilde raporlama.</p>
+          <p><strong>Yüksek performans ve CTI desteği:</strong> Çağrı merkezi teknolojileriyle entegre, hızlı ve verimli çalışma.</p>
+      
+          <p><em>Voiscope Dialer</em> ürünümüz, tüm bu özellikleri ve daha fazlasını sunarak, yüksek performanslı bir çözüm sunar.</p>
+      
+          
+          <!-- Galeri Başlangıcı -->
+<div class="image-gallery">
+    <div class="image-container">
+   <!-- Sol Yön Oku -->
+   <div class="arrow left-arrow">
+    <i class="fas fa-chevron-left"></i>
+  </div>   
+      <!-- Gallery Image with Tooltip -->
+      <div class="gallery-container">
+        <img src="images/ivr.jpg" alt="Image 1" class="gallery-image" />
+        <div class="item-hints">
+          <div class="hint" data-position="4">
+            <span class="hint-radius"></span>
+            <span class="hint-dot"><i class="fas fa-info-circle"></i></span>
+            <div class="hint-content do--split-children">
+              <p ><b style="font-size: 18px;">Resme çift tıklayarak tam ekran görüntüleyebilirsiniz.</b></p> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <!-- Sağ Yön Oku -->
+  <div class="arrow right-arrow">
+    <i class="fas fa-chevron-right"></i>
+  </div>       </div>
+  </div>
+  <!-- Galeri Sonu -->
+  
+        </div>
+      
+        <div id="info2" class="card-info"><div class="head_title">
+          <h3>Voiscope Ses Kayıt Sistemi</h3>
+          <div class="separator"></div>
+        </div>
+        <p>Ses Kayıt Sistemleri, yapılan telefon görüşmelerini tarih, saat, telefon numarası, dahili hat ve CTI verileri gibi bilgilerle birlikte kaydeder. Bu sistemler, çağrıların izlenmesi ve gerektiğinde yeniden dinlenmesi için kritik bir rol oynar.</p>
+
+        <p>Gelişmiş bir Ses Kayıt Sistemi'nden beklenen başlıca özellikler şunlardır:</p>
+    
+        <p><strong>Web tabanlı arayüz:</strong> Kolay yönetim için kullanıcı dostu bir web platformu.</p>
+        <p><strong>Dağıtık çalışma:</strong> Farklı lokasyonlarda aynı anda kullanılabilme imkanı.</p>
+        <p><strong>Esnek raporlama:</strong> Çağrıların detaylı analizini sağlayan gelişmiş raporlar.</p>
+        <p><strong>VoIP protokol desteği:</strong> SIP, H323, RTP, SRTP gibi yaygın VoIP protokolleriyle uyumluluk.</p>
+        <p><strong>Santral entegrasyonu:</strong> AVAYA, CISCO, GENESYS gibi santral sistemleriyle sorunsuz entegrasyon.</p>
+        <p><strong>Port mirroring ve CTI ile kayıt:</strong> Çeşitli yöntemlerle kayıt alma esnekliği.</p>
+    
+        <p>Geliştirdiğimiz Ses Kayıt Sistemi, tüm bu özellikleri ve çok daha fazlasını sunarak, her türlü işletmenin kayıt ihtiyaçlarını karşılamaktadır.</p>
+    
+        <hr>
+    
+        <div class="head_title">
+          <h3>Voiscope Speech Analytics</h3>
+          <div class="separator"></div>
+        </div>
+        <p>Speech Analytics Sistemleri, ses kayıtlarının içeriğini analiz ederek, konuşmaları metne dönüştüren ve bu verileri analiz eden sistemlerdir. Bu sistem, çağrı içeriklerini metin olarak kaydeder, analiz eder ve raporlar sunarak detaylı bilgi sağlar.</p>
+
+    <p>Başarı oranını artırmak için her ses kayıt operasyonuna özel eğitim uygulanır. Bu sayede tanıma başarısı %90 ve üzerine çıkartılır.</p>
+
+    <p>Gelişmiş bir Speech Analytics Sistemi'nden beklenen temel özellikler şunlardır:</p>
+
+    <p><strong>Yüksek tanıma oranı:</strong> %90 ve üzeri başarıyla yüksek performans.</p>
+    <p><strong>Çağrı içerik analizi:</strong> Konuşma içerikleri üzerine ayrıntılı raporlama ve sorgulama imkanı.</p>
+    <p><strong>Kullanıcı dostu web arayüzü:</strong> Modern, anlaşılır ve kolay kullanımlı bir arayüz ile yönetim.</p>
+
+    <p>Geliştirdiğimiz Speech Analytics Sistemi, tüm bu özelliklere ek olarak Derin Öğrenme teknolojisiyle çalışmakta ve daha ileri düzey analiz imkanı sunmaktadır.</p>
+
+        
+        <!-- Galeri Başlangıcı -->
+<div class="image-gallery">
+  <div class="image-container">
+   <!-- Sol Yön Oku -->
+   <div class="arrow left-arrow">
+    <i class="fas fa-chevron-left"></i>
+  </div>
+  
+    <!-- Gallery Image with Tooltip -->
+    <div class="gallery-container">
+      <img src="images/recorder1.jpg" alt="Image 2" class="gallery-image" />
+      <div class="item-hints">
+        <div class="hint" data-position="4">
+          <span class="hint-radius"></span>
+          <span class="hint-dot"><i class="fas fa-info-circle"></i></span>
+          <div class="hint-content do--split-children">
+            <p ><b style="font-size: 18px;">Resme çift tıklayarak tam ekran görüntüleyebilirsiniz.</b></p> 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Sağ Yön Oku -->
+  <div class="arrow right-arrow">
+    <i class="fas fa-chevron-right"></i>
+  </div>    </div>
+</div>
+<!-- Galeri Sonu --></div>
+
+<!--Drop down menüsü-->
+        <div id="info3" class="card-info">
+          <div class="head_title">
+          <h3>ASR Demo</h3>
+          <div class="separator2"></div>
+      </div>
+      
+        <form id="asrdemoform">
+            <div  class="menu">
+              <div class="item">
+                <a href="#" class="link">
+                  <span> Model seçiniz: </span>
+                  <svg viewBox="0 0 360 360" xml:space="preserve">
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        id="XMLID_225_"
+                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <div class="submenu">
+                  <div class="submenu-group">
+                    <span class="group-title"><b id="modelDili">Türkçe</b></span>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">Ortam Demo (Mikrofon)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">Telefon Demo (Çağrı Merkezi)</a>
+                    </div>
+                  </div>
+                  <div class="submenu-group">
+                    <span class="group-title"><b id="modelDili">İngilizce</b></span>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">Ortam Demo (Mikrofon)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">Telefon Demo (Çağrı Merkezi)</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="mdl16ktxt">
+                <div class="httpsdisabled">
+                    <div style="width: 100%;"><p id="startVEfile">Lütfen PCM 16000 Hz. mono formatta wav dosyanızı upload ediniz. (Maks 5 MB)</p></div>
+                    <input type="file" id="fileInput" class="custom-file-input" style="display: none;">
+                    <button type="button" class="Documents-btn" onclick="document.getElementById('fileInput').click();">
+                      <span class="folderContainer">
+                        <svg class="fileBack" width="146" height="113" viewBox="0 0 146 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z" fill="url(#paint0_linear_117_4)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear_117_4" x1="0" y1="0" x2="72.93" y2="95.4804" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#ef2323"></stop>
+                              <stop offset="1" stop-color="#ef2323"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <svg class="filePage" width="88" height="99" viewBox="0 0 88 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+                          <defs>
+                            <linearGradient id="paint0_linear_117_6" x1="0" y1="0" x2="81" y2="160.5" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="white"></stop>
+                              <stop offset="1" stop-color="#686868"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <svg class="fileFront" width="160" height="79" viewBox="0 0 160 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z" fill="url(#paint0_linear_117_5)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear_117_5" x1="38.7619" y1="8.71323" x2="66.9106" y2="82.8317" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#ef2323"></stop>
+                              <stop offset="1" stop-color="#ef2334"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </span>
+                      <p class="text">Dosya Seç</p>
+                    </button>
+                </div>
+                <div class="httpsenabled">
+                  <div style="width: 100%;">
+                    <p id="startVEfile">Start Record butonuna basarak mikrofonunuz ile kayıt bırakabilirsiniz. (Maks 60 sn)</p>
+                  </div>
+                  <button id="startButton" class="btn-request" style="float: left;">Start Record</button>
+                  <label id="recordleft" style="float: left; margin-left: 20px;">60</label> 
+                </div>
+              
+                <div class="container"></div>
+              
+                <script src="https://d3js.org/d3.v3.min.js"></script>
+            </div>
+            <!--
+            <div id="mdl8ktxt" style="display: none">
+                <div style="width: 100%;">Lütfen PCM 8000 Hz. stereo veya mono formatta wav dosyanızı upload ediniz. (Maks 5 MB)</div>
+                <input type="file" id="fileInput8k" class="custom-file-input" style="display: none;">
+                <button type="button" class="Documents-btn" onclick="document.getElementById('fileInput8k').click();">
+                  <span class="folderContainer">
+                    <svg class="fileBack" width="146" height="113" viewBox="0 0 146 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z" fill="url(#paint0_linear_117_4)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear_117_4" x1="0" y1="0" x2="72.93" y2="95.4804" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#ef2323"></stop>
+                          <stop offset="1" stop-color="#ef2323"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <svg class="filePage" width="88" height="99" viewBox="0 0 88 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+                      <defs>
+                        <linearGradient id="paint0_linear_117_6" x1="0" y1="0" x2="81" y2="160.5" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="white"></stop>
+                          <stop offset="1" stop-color="#686868"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <svg class="fileFront" width="160" height="79" viewBox="0 0 160 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z" fill="url(#paint0_linear_117_5)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear_117_5" x1="38.7619" y1="8.71323" x2="66.9106" y2="82.8317" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#ef2323"></stop>
+                          <stop offset="1" stop-color="#ef2334"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </span>
+                  <p class="text">Dosya Seç</p>
+                </button>
+            </div>-->
+        </form>
+      
+      
+      
+      
+      <div class="head_title">
+        <h3>Voiscope ASR</h3>
+        <div class="separator"></div>
+    </div>
+    <p>ASR (Automatic Speech Recognition) Sistemleri, dijital ses verilerini işleyerek konuşmaları metne dönüştüren teknolojilerdir. Özellikle IVR sistemleriyle entegre çalışarak, tuşlama yerine sesli komutlarla arayan kişilerin daha hızlı bir şekilde doğru menüye veya müşteri temsilcisine yönlendirilmesini (Call Steering) sağlar.</p>
+
+    <p>ASR sistemleri dil bağımlıdır, bu yüzden her dil için ayrı modeller oluşturulmalı ve ilgili dilde veriyle eğitim yapılmalıdır.</p>
+
+    <p>Gelişmiş bir ASR sisteminde bulunması gereken temel özellikler şunlardır:</p>
+
+    <p><strong>Yüksek tanıma başarısı:</strong> %90 ve üzeri doğruluk oranı.</p>
+    <p><strong>Hızlı tanıma:</strong> Sesli komutları çok kısa sürede işleme.</p>
+    <p><strong>Çoklu kanal desteği:</strong> Aynı anda birden fazla sesi işleyebilme yeteneği.</p>
+    <p><strong>Kullanıcı dostu Web API:</strong> Yazılım geliştiricilerin kolayca entegre edebileceği API desteği.</p>
+
+    <p>Geliştirdiğimiz ASR Sistemi, tüm bu özelliklerin yanı sıra Derin Öğrenme teknolojisini kullanarak yüksek performanslı ve esnek bir çözüm sunmaktadır.</p>
+
+</div>
+    </div>
+        <div id="info4" class="card-info2">
+          <div class="head_title">
+            <h3> TTS Demo</h3>
+            <div class="separator"></div>
+        </div>
+        <p>
+            <b>Aşağıdaki demo modelleri dışında istediğiniz dilde istediğiniz kişinin sesiyle çok kısa sürede size özel model geliştirebiliriz. Bunun için bizimle irtibata geçebilirisniz. Tek gereken o kişiye bizim vereceğimiz anonsları okutmaktır.</b>
+        </p>
+        <p>
+          <form id="asrdemoform">
+            <div  class="menu">
+              <div class="item">
+                <a href="#" class="link">
+                  <span> Model seçiniz: </span>
+                  <svg viewBox="0 0 360 360" xml:space="preserve">
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        id="XMLID_225_"
+                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <div class="submenu">
+                  <div class="submenu-group">
+                    <span class="group-title"><b id="modelDili">Türkçe</b></span>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">Türkçe-Ahmet Demo (Erkek)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">Türkçe-İncila Demo (Kadın)</a>
+                    </div>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">Türkçe-Anna Demo (Kadın)</a>
+                    </div>
+                  </div>
+                  <div class="submenu-group">
+                    <span class="group-title"><b id="modelDili">İngilizce</b></span>
+                    <div class="submenu-item">
+                      <a href="#" class="submenu-link">İngilizce-Julia Demo (Kadın)</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input id="ttstext" type="text" class="form-control" placeholder="Lütfen Çevirmek İstediğiniz Metni Giriniz (Maks 300 karakter)" style="width: 100%;margin-top: 10px">
+                <input id="playtts" type="button" value="Play" style="margin-top: 10px;margin-left: 10px">
+                <divb style="width: 100%"></divb>
+                <audio id="play" controls style="margin-top: 10px;width: 100%"></audio>
+       
+        </form>  
+
+
+
+
+
+        </p>
+        <div class="head_title">
+            <h3> Voiscope TTS</h3>
+            <div class="separator"></div>
+        </div>
+        <p>TTS (Text To Speech) Sistemleri, yazılı metinleri dijital ses verisine dönüştürür ve ASR sistemlerinin tam tersine çalışır. Özellikle IVR sistemleriyle entegre kullanılarak, dinamik olarak okunması gereken anonsların ses dosyası olmadan metin girilerek okunması en yaygın kullanım alanlarından biridir.</p>
+
+    <p>TTS sistemleri de dil bağımlıdır, bu nedenle her dil için ayrı modeller oluşturulmalı ve o dildeki verilerle eğitim yapılmalıdır.</p>
+
+    <p>Gelişmiş bir TTS sisteminden beklenen başlıca özellikler şunlardır:</p>
+
+    <p><strong>Doğru telaffuz ve tonlama:</strong> Desteklediği dillerde robotik bir ses hissi vermeden, doğal insan sesine en yakın ses üretimi.</p>
+    <p><strong>Hızlı ses üretimi:</strong> Yazılı metinleri çok kısa sürede sese dönüştürme.</p>
+    <p><strong>Çoklu kanal desteği:</strong> Aynı anda birden fazla ses işleyebilme yeteneği.</p>
+    <p><strong>Kullanıcı dostu Web API:</strong> Yazılım geliştiriciler için kolayca entegre edilebilen API desteği.</p>
+
+    <p>Geliştirdiğimiz TTS Sistemi, tüm bu özelliklerin yanı sıra Derin Öğrenme teknolojisiyle yüksek performans ve esneklik sağlamaktadır.</p>
+
+        </div>
+      </div>
+      
+      <!-- Fullscreen Modal -->
+      <div id="fullscreenModal" class="fullscreen-modal">
+        <span class="close">&times;</span>
+        <img class="fullscreen-image" id="fullscreenImg" />
+      </div>
+      
+      <!-- DEMO TALEBİ -->
+ <div class="card-info3" id="demo-talebi">
+      <div class="head_title">
+        <h3>HEMEN DEMO TALEBİNDE BULUNUN</h3>
+        <div class="separator"></div>
+    </div>
+    <p>
+        Ürünlerimiz <b>(IVR, Dialer, Ses Kayıt, Speech Analytics, ASR, TTS)</b> hakkında 
+        daha detaylı bilgi almak ve canlı çalışmasını test etmek istiyorsanız, 
+        size özel demo yapmamız için hemen aşağıdaki formu doldurarak talepte bulunun,
+        size en kısa sürede dönüş yapalım.
+    </p>
+    <div class="single_contant_left">
+      <form action="#" id="formid">
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="wave-group">
+                      <input type="text" class="input form-control" name="name" required="">
+                      <span class="bar"></span>
+                      <label class="label">
+                          <span class="label-char" style="--index: 0">İ</span>
+                          <span class="label-char" style="--index: 1">s</span>
+                          <span class="label-char" style="--index: 2">i</span>
+                          <span class="label-char" style="--index: 3">m</span>
+                          <span class="label-char" style="--index: 4">&nbsp;</span>
+                          <span class="label-char" style="--index: 5">S</span>
+                          <span class="label-char" style="--index: 6">o</span>
+                          <span class="label-char" style="--index: 7">y</span>
+                          <span class="label-char" style="--index: 8">i</span>
+                          <span class="label-char" style="--index: 9">s</span>
+                          <span class="label-char" style="--index: 10">i</span>
+                          <span class="label-char" style="--index: 11">m</span>
+                      </label>
+                  </div>
+                  <br> 
+              </div>
+              <div class="col-sm-6">
+                  <div class="wave-group">
+                      <input type="text" class="input form-control" name="company" required="">
+                      <span class="bar"></span>
+                      <label class="label">
+                          <span class="label-char" style="--index: 0">F</span>
+                          <span class="label-char" style="--index: 1">i</span>
+                          <span class="label-char" style="--index: 2">r</span>
+                          <span class="label-char" style="--index: 3">m</span>
+                          <span class="label-char" style="--index: 4">a</span>
+                          <span class="label-char" style="--index: 5">&nbsp;</span>
+                          <span class="label-char" style="--index: 6">İ</span>
+                          <span class="label-char" style="--index: 7">s</span>
+                          <span class="label-char" style="--index: 8">m</span>
+                          <span class="label-char" style="--index: 9">i</span>
+                      </label>
+                  </div>
+              </div>
+          </div> <br> 
+  
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="wave-group">
+                      <input type="email" class="input form-control" name="email" required="">
+                      <span class="bar"></span>
+                      <label class="label">
+                          <span class="label-char" style="--index: 0">E</span>
+                          <span class="label-char" style="--index: 1">m</span>
+                          <span class="label-char" style="--index: 2">a</span>
+                          <span class="label-char" style="--index: 3">i</span>
+                          <span class="label-char" style="--index: 4">l</span>
+                      </label>
+                  </div>
+              </div>
+              <br>
+              <div class="col-sm-6">
+                  <div class="wave-group">
+                      <input type="text" class="input form-control" name="phone" required="">
+                      <span class="bar"></span>
+                      <label class="label">
+                          <span class="label-char" style="--index: 0">T</span>
+                          <span class="label-char" style="--index: 1">e</span>
+                          <span class="label-char" style="--index: 2">l</span>
+                          <span class="label-char" style="--index: 3">e</span>
+                          <span class="label-char" style="--index: 4">f</span>
+                          <span class="label-char" style="--index: 5">o</span>
+                          <span class="label-char" style="--index: 6">n</span>
+                      </label>
+                  </div>
+              </div>
+          </div>
+          <br>
+  <!-- #region OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+          <form id="asrdemoform"> 
+            <div  class="menu2">
+              <div class="item2">
+                <a href="#" class="link2">
+                  <span> Konuları Seçiniz: </span>
+                  <svg viewBox="0 0 360 360" xml:space="preserve">
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        id="XMLID_225_"
+                        d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <div class="submenu2">
+                  <div class="submenu-group">
+                    <div class="submenu-item2">
+                      <a href="#" class="submenu-link2">IVR/Dialer</a>
+                    </div>
+                    <div class="submenu-item2">
+                      <a href="#" class="submenu-link2">Ses Kayıt/QM</a>
+                    </div>
+                  </div>
+                  <div class="submenu-group">
+                    <div class="submenu-item2">
+                      <a href="#" class="submenu-link2">Speech Analytics</a>
+                    </div>
+                    <div class="submenu-item2">
+                      <a href="#" class="submenu-link2">ASR/TTS</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+  
+          <div class="form-group">
+            <textarea id="mesajKutusu" class="form-control" name="message" rows="3" placeholder="Mesajınız"></textarea>       
+          </div>
+  
+          <div class="">
+            <!-- <input type="submit" value="Gönder" class="btn btn-primary"> -->
+            <button id="startButton" class="btn-request">Gönder</button>
+        </div>
+      </form>
+  </div>
+  
+  </div>
+
+  <!--ARGE PROJELER-->
+<div class="card-info3" > 
+  <div class="head_title" id="ar-ge">
+    <h3>DEVAM EDEN AR-GE PROJELERİ</h3>
+    <div class="separator"></div>
+</div>
+
+<div class="conteudo__geral">
+  <div class="containerC">
+      <div class="container-carrossel">
+          <div class="carrossel">
+              <div class="carrossel-item">
+                  <h3>CONTACT CENTER</h3>
+                              <p>
+                                  <b>Cloud</b> üzerinde çalışabilecek mimaride, Web tabanlı, <b>Web RTC</b> destekli, 
+                                  <b>Sosyal Medaya</b> ve <b>Web Sitesi</b> üzerinden de mesaj olarak çağrı alabilen <b>çok kanallı Çağrı Merkezi</b> projesidir.
+                              </p>
+              </div>
+              <div class="carrossel-item">
+                  <h3>EMOTION DETECTION (DUYGU TANIMA)</h3>
+                              <p>
+                                  Ses sinyalinden konuşmacının duygu durumunu tespit eden sistemlerdir. 
+                                  Bu sistemler ses sinyalinin bürünsel özellikleri ile konuşma içeriğinde kullanılan kelimelerin istatistiklerini 
+                                  birlikte kullanarak duygu durumuna karar vermektedir. <b>Ses Kayıt Sistemlerinde</b> kullanılması 
+                                  çağrı merkezi hizmet kalitesi verimliliği artırmada önemli rol oynar.  
+                                  <b>Derin Öğrenme Kullanılmaktadır</b>.                              
+                              </p>
+              </div>
+              <div class="carrossel-item">
+                  <h3>SPEAKER VERIFICATION (KONUŞMACI TANIMA)</h3>
+                              <p>
+                                  Ses sinyalinden konuşmacı kimliğini doğrulayan sistemlerdir. 
+                                  <b>IVR</b> sistemleri ile entegre çalışarak arayan kişilerin kimliğinin otomatik olarak doğrulanmasını sağlamaktadırlar. 
+                                  Metin bağımlı olarak yapılan konuşmacı doğrulama, <b>IVR</b> sistemlerine giriş için kullanılmaktadır. 
+                                  Metin bağımsız olarak yapılan doğrulama ise <b>Çağrı Merkezi</b> sistemlerinde arkaplanda otomatik olarak müşterilerin 
+                                  kimliğinin tespitinde kullanılmaktadır. 
+                                  Bu şekilde müşterinin bilgilerini ele geçiren kötü niyetli kişilerin tespit edilmesi sağlanmaktadır. 
+                                  <b>Derin Öğrenme Kullanılmaktadır</b>.
+                              </p>
+              </div>
+              <div class="carrossel-item">
+                  <h3>SPEAKER DIARIZATION (KONUŞMACI BÖLÜTLEME)</h3>
+                  <p>
+                      Ses sinyalinden kimin ne zaman konuştuğunu bulan sistemlerdir. 
+                      Konuşmacı sayısı ve konuşmacıların kim oldukları hakkında herhangi bir bilgi kullanmadan kimin, ne zaman konuştuğu tespit edilmektedir. 
+                      <b>Derin Öğrenme Kullanılmaktadır</b>.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="scriptC.js"></script>
+</div> 
+
+<div class="card-info3">
+<div class="head_title" id="kariyer" >
+
+  <h3>KARİYER</h3>
+  <div class="separator"></div>
+</div>
+<p>
+  Ar-Ge Projelerimizde yer almak üzere bizimle çalışmak isterseniz değerlendirilmek üzere cv'nizi bize gönderebilirsiniz.
+</p>
+
+<div id="mdl16ktxt">
+      <div style="width: 100%;"><p id="">Lütfen CV'nizi PDF formatında gönderiniz</p></div>
+      <input type="file" id="fileInput" class="custom-file-input" style="display: none;">
+      <button type="button" class="Documents-btn" onclick="document.getElementById('fileInput').click();">
+        <span class="folderContainer">
+          <svg class="fileBack" width="146" height="113" viewBox="0 0 146 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z" fill="url(#paint0_linear_117_4)"></path>
+            <defs>
+              <linearGradient id="paint0_linear_117_4" x1="0" y1="0" x2="72.93" y2="95.4804" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ef2323"></stop>
+                <stop offset="1" stop-color="#ef2323"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg class="filePage" width="88" height="99" viewBox="0 0 88 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+            <defs>
+              <linearGradient id="paint0_linear_117_6" x1="0" y1="0" x2="81" y2="160.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"></stop>
+                <stop offset="1" stop-color="#686868"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg class="fileFront" width="160" height="79" viewBox="0 0 160 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z" fill="url(#paint0_linear_117_5)"></path>
+            <defs>
+              <linearGradient id="paint0_linear_117_5" x1="38.7619" y1="8.71323" x2="66.9106" y2="82.8317" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ef2323"></stop>
+                <stop offset="1" stop-color="#ef2334"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <p class="text">Dosya Seç</p>
+      </button>
+  </div>
+
+  <div class="folderContainer"></div>
+
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+</div>
+
+
+<!-- ORJİNALİ
+<form action="#" id="formid">
+  <!-  <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">   ->
+  <p>Lütfen CV'nizi PDF formatında gönderiniz</p>
+  <input type="file" class="form-control uploadedCV">
+  <!-  </div>  -> 
+</form>
+-->
+
+</div>
+
+  <!--Mesaj gönderme kısmı-->
+  <div class="card-info3">
+  <div class="head_title" id="iletisim">
+    <h3>MESAJ GÖNDERİN</h3>
+    <div class="separator"></div>
+  </div>
+  
+  <div class="single_contant_left">
+    <form action="#" id="formid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="wave-group">
+                    <input type="text" class="input form-control" name="name" required="">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">İ</span>
+                        <span class="label-char" style="--index: 1">s</span>
+                        <span class="label-char" style="--index: 2">i</span>
+                        <span class="label-char" style="--index: 3">m</span>
+                        <span class="label-char" style="--index: 4">&nbsp;</span>
+                        <span class="label-char" style="--index: 5">S</span>
+                        <span class="label-char" style="--index: 6">o</span>
+                        <span class="label-char" style="--index: 7">y</span>
+                        <span class="label-char" style="--index: 8">i</span>
+                        <span class="label-char" style="--index: 9">s</span>
+                        <span class="label-char" style="--index: 10">i</span>
+                        <span class="label-char" style="--index: 11">m</span>
+                    </label>
+                </div>
+            </div><br>
+            <div class="col-sm-6">
+                <div class="wave-group">
+                    <input type="text" class="input form-control" name="company" required="">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">F</span>
+                        <span class="label-char" style="--index: 1">i</span>
+                        <span class="label-char" style="--index: 2">r</span>
+                        <span class="label-char" style="--index: 3">m</span>
+                        <span class="label-char" style="--index: 4">a</span>
+                        <span class="label-char" style="--index: 5">&nbsp;</span>
+                        <span class="label-char" style="--index: 6">İ</span>
+                        <span class="label-char" style="--index: 7">s</span>
+                        <span class="label-char" style="--index: 8">m</span>
+                        <span class="label-char" style="--index: 9">i</span>
+                    </label>
+                </div>
+            </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-6">
+              <div class="wave-group">
+                  <input type="email" class="input form-control" name="email" required="">
+                  <span class="bar"></span>
+                  <label class="label">
+                      <span class="label-char" style="--index: 0">E</span>
+                      <span class="label-char" style="--index: 1">m</span>
+                      <span class="label-char" style="--index: 2">a</span>
+                      <span class="label-char" style="--index: 3">i</span>
+                      <span class="label-char" style="--index: 4">l</span>
+                  </label>
+              </div>
+          </div>
+          <br>
+          <div class="col-sm-6">
+              <div class="wave-group">
+                  <input type="text" class="input form-control" name="subject" required="">
+                  <span class="bar"></span>
+                  <label class="label">
+                      <span class="label-char" style="--index: 0">K</span>
+                      <span class="label-char" style="--index: 1">o</span>
+                      <span class="label-char" style="--index: 2">n</span>
+                      <span class="label-char" style="--index: 3">u</span>
+                  </label>
+              </div>
+          </div>
+      </div>
+      <br>
+      
+      <div class="form-group">
+        <textarea id="mesajKutusu" class="form-control" name="message" rows="8" placeholder="Mesajınız"></textarea>      
+      </div>
+
+      <div class="">
+        <!-- <input type="submit" value="Gönder" class="btn btn-primary"> -->
+        <button id="startButton" class="btn-request">Gönder</button>
+    </div>
+    <!--</div>--> 
+</form>
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="video_overlay"> <!-- style="background: linear-gradient(to bottom right, #1e3c72, #e9ffa7);"-->
+  <div class="container2">
+    <div class="footer_logo">
+      <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="main_widget">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="single_widget wow fadeIn" data-wow-duration="800ms">
+       <img style="padding-left: 50px; padding-top: 15px; padding-right: 50px; background-color: rgba(32, 127, 235, 0.261); border-bottom-right-radius: 15px; border-bottom-left-radius: 15px ; " src="images/logo.png" alt="" />
+    </div>
+        <p style="color: white; padding-left: 100px;">Voiscope Telekomünikasyon Teknolojileri Yazılım Danışmanlık San. ve Tic. Ltd. Şti. </p>
+        <p style="color: white; padding-left: 100px;">YTÜ Davutpaşa Kampüsü Teknopark A1 Blok No:1B30 Esenler / İstanbul, 34220 </p>
+        <p style="color: white; padding-left: 100px;">E-Posta: info@voiscope.com </p>
+        <p style="color: white; padding-left: 100px;">Tel: +90 0850 532 75 04 </p>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+<div class="scrollup">
+  <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>      
+      
+      
+
+    <div>
+        <p id="footer1" fadeInRight" data-wow-duration="1s">Voiscope 2024. All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
